@@ -1,0 +1,8 @@
+{
+    "maven.terminal.favorites": [
+        {
+            "alias": "Build and deploy to Azure",
+            "command": "clean package azure-webapp:deploy"
+        }
+    ]
+}
