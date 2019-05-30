@@ -12,7 +12,7 @@
     <font face="Segoe UI" size="4">
         <table width="750" frame="border" border="3">
             <tr>
-                <th align="left" width="200">    Property  </th>  
+                <th align="left" width="300">    Property  </th>  
                 <th align="left" width="500">    Value  </th>
             </tr>
             <tr>
