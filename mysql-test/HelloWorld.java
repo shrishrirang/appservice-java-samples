@@ -25,8 +25,16 @@ public class HelloWorld {
         } 
 
         try {
-            String url = "jdbc:mysql://_NAME_.mysql.database.azure.com:3306/_DB_?verifyServerCertificate=false&useSSL=true&requireSSL=false";
-            Connection con = DriverManager.getConnection(url, "_USERNAME_@_SERVER_", "_PASSWORD_");
+            //set "connectionstring=jdbc:mysql://_NAME_.mysql.database.azure.com:3306/_DB_?verifyServerCertificate=false&useSSL=true&requireSSL=false"
+            String url = System.getenv("connectionstring");
+            
+            // set username=_USER_@_NAME_
+            String username = System.getenv("username");
+            
+            // set password=_PASSWORD_
+            String password = System.getenv("password");
+            
+            Connection con = DriverManager.getConnection(url, username, password);
         }
         catch (Exception e){
             e.printStackTrace();
